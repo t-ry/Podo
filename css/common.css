@@ -44,7 +44,7 @@ label { margin: 0; padding: 0;}
 
 a, span, u, b { color: inherit; }
 
-.font_en { font-family: 'Inter', sans-serif; font-weight: 1200; font-style: italic; line-height: 1.5; }
+.font_en { font-family: 'Inter', sans-serif; font-weight: bold; font-style: italic; line-height: 1.5; font-size: 3.6rem; }
 .uppercase { text-transform: uppercase; }
 
 @media screen and (max-width: 900px) {
