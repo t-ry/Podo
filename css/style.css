@@ -1,9 +1,13 @@
 
+/* 共通要素 */
 body { padding-top: 100px; }
 a { cursor: pointer; }
 
 .heading { font-size: 6.4rem; font-weight: bold; text-align: start; }
 .subheading { font-size: 3.6rem; text-align: start; }
+
+.container { display: flex; justify-content: space-between; width: 77%; margin: 50px 10%; }
+.container:nth-of-type(even) > .inner { justify-content: flex-end; }
 
 /* ヘッダー */
 header { width: 100vw; height: 100vh; background: url(../images/pc_mookup.png) center center / cover no-repeat; display: flex; align-items: center; justify-content: center; overflow: hidden; }
@@ -20,32 +24,75 @@ header { width: 100vw; height: 100vh; background: url(../images/pc_mookup.png) c
 /* 作品一覧 */
 #Works { display: block; position: relative; }
 #Works > .heading { text-align: center; }
-
 .current_works { text-align: end; padding-right: 10%; color: #FF5722; }
-
-
-.container { display: flex; justify-content: space-between; width: 77%; margin: 50px 10%; }
-.container:nth-of-type(even) > .inner { justify-content: flex-end; }
-
 .theme { transform: rotate(90deg); color: #FF5722; width: 10px; white-space: nowrap; height: fit-content; transform-origin:0 50%;}
 .inner { display: flex; flex-wrap: wrap; }
 .content_box { display: block; width: 28%; padding: 40px 10px; }
-.content_box video { width: 100%; padding-bottom: 10px; }
+.content_box img { width: 100%; padding-bottom: 10px; }
 .buttons { display: flex; justify-content: space-between;}
 .btn { font-size: 1.6rem; border: 1px solid #fff8f8; padding: 10px 30px; width: 30%; position: relative;  display: flex; align-items: center;  justify-content: center; text-decoration: none; outline: none; overflow: hidden;}
 
-/*  .btn:hover { color: #FF5722; border-color: transparent; transition-delay: .6s }
+/*  
+    .btn:hover { color: #FF5722; border-color: transparent; transition-delay: .6s }
     .btn::before { transition: all .3s ;}
     .btn:hover::before { width: 100%; transition-delay: .4s;} 
 */
 
 /* 作り方 */
 #explanation .container { justify-content: flex-end; margin: 0 auto;}
-
 .sample { display: flex; width: 82%; }
 .sample .theme { opacity: .7; }
-.sample video { width: 100%; height: auto; }
-
+.sample img { width: 100%; height: auto; }
 .wrapper { width: 100%; padding: 10px; position: relative;}
 .mask { -webkit-mask-image: linear-gradient(rgba(38,41,41,.7), rgba(38,41,41,0)); mask-image: linear-gradient(rgba(38,41,41,.7), rgba(38,41,41,0)); }
 .caption { position: absolute; top: 67%; left: 11%; }
+
+.scrolldown4{
+  position:absolute;
+  bottom:10%;
+  right:50%;
+  animation: arrowmove 2s ease-in-out infinite;
+}
+@keyframes arrowmove{
+      0%{bottom:10%;}
+      50%{bottom:12%;}
+     100%{bottom:10%;}
+ }
+.scrolldown4 span{
+    /*描画位置*/
+  position: absolute;
+  left:-20px;
+  bottom:10px;
+    /*テキストの形状*/
+  color: #eee;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  /*縦書き設定*/
+  -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+.scrolldown4:before {
+    content: "";
+    /*描画位置*/
+    position: absolute;
+    bottom: 0;
+    right: -6px;
+    /*矢印の形状*/
+    width: 1px;
+    height: 20px;
+    background: #eee;
+    transform: skewX(-31deg);
+}
+.scrolldown4:after{
+  content:"";
+    /*描画位置*/
+  position: absolute;
+  bottom:0;
+  right:0;
+    /*矢印の形状*/
+  width:1px;
+  height: 50px;
+  background:#eee;
+}
+
