@@ -1,7 +1,7 @@
 $(function($) { 
-    $('.bg-switcher').bgSwitcher({
-    images: ['images/bg1.jpg','images/bg2.jpg','images/bg3.jpg'],
-    interval: 5000,
-    loop: true
+    $('.mainvidual').bgSwitcher({
+    images: ['../images/pc_mockup.png','../images/pc_mockup_selected.png'],
+    interval: 3000,
+    loop: true,
     });
 });
