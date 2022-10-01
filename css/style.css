@@ -17,7 +17,8 @@ h3 { font-size: 2.4rem; color: #ff5722;}
 .access { text-align: right;}
 
 /* ヘッダー */
-header { width: 100vw; height: 100vh; background-image: url(../images/pc_mookup.png); background-position: left 80% bottom 25%; background-size: 160%; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.mainvidual { width: 100vw; height: 100vh; background-image: url(../images/pc_mookup.png); background-position: left 80% bottom 25%; background-size: 160%; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+
 /* ナビゲーション */
 nav { display: flex; justify-content: space-between; padding: 20px 10%; position: fixed; top: 0; left: 0; width: 80%; background-color: rgba(38,41,41,.7); z-index: 9999; }
 nav ul { display: flex; }
