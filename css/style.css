@@ -1,11 +1,10 @@
 
 /* 共通要素 */
-body { padding-top: 100px; }
+body { padding-top: 100px;}
 a { cursor: pointer; }
 img { width: 100%; }
 h2 { font-size: 3.6rem; }
 h3 { font-size: 2.4rem; color: #ff5722;}
-footer p { color: #FF5722; line-height: 60px; font-size: 16px; text-align: center; padding-top: 50px;}
 
 .heading { font-size: 6.4rem; font-weight: bold; text-align: start; }
 .subheading { font-size: 3.6rem; text-align: start; }
@@ -15,14 +14,16 @@ footer p { color: #FF5722; line-height: 60px; font-size: 16px; text-align: cente
 .container { display: flex; justify-content: space-between; width: 78%; margin: 50px 10%; }
 .container:nth-of-type(even) > .inner { justify-content: flex-end; }
 
+.access { text-align: right;}
+
 /* ヘッダー */
 header { width: 100vw; height: 100vh; background-image: url(../images/pc_mookup.png); background-position: left 80% bottom 25%; background-size: 160%; display: flex; align-items: center; justify-content: center; overflow: hidden; }
-    /* ナビゲーション */
-    nav { display: flex; justify-content: space-between; padding: 20px 10%; position: fixed; top: 0; left: 0; width: 80%; background-color: rgba(38,41,41,.7); z-index: 9999; }
-    nav ul { display: flex; }
-    nav li { list-style: none; margin-left: 60px;}
-    nav a { color: #ff5722; font-size: 3.6rem; font-weight: bold; text-decoration: none;}
-    nav .nav-loop { text-align: start; }
+/* ナビゲーション */
+nav { display: flex; justify-content: space-between; padding: 20px 10%; position: fixed; top: 0; left: 0; width: 80%; background-color: rgba(38,41,41,.7); z-index: 9999; }
+nav ul { display: flex; }
+nav li { list-style: none; margin-left: 60px;}
+nav a { color: #ff5722; font-size: 3.6rem; font-weight: bold; text-decoration: none;}
+nav .nav-loop { text-align: start; }
 
 .title { position: absolute; top: 50%; left: 62%; transform: translateY(-50%); -webkit-transform: translateY(-50%);}
 .title > p { margin-top: 11%; margin-bottom: 9%; font-size: 1.6rem; line-height: 300%;}
@@ -38,9 +39,9 @@ header { width: 100vw; height: 100vh; background-image: url(../images/pc_mookup.
 .btn { font-size: 1.6rem; border: 1px solid #fff8f8; padding: 10px 30px; width: 30%; position: relative;  display: flex; align-items: center;  justify-content: center; text-decoration: none; outline: none; overflow: hidden;}
 
 /*  
-    .btn:hover { color: #FF5722; border-color: transparent; transition-delay: .6s }
-    .btn::before { transition: all .3s ;}
-    .btn:hover::before { width: 100%; transition-delay: .4s;} 
+.btn:hover { color: #FF5722; border-color: transparent; transition-delay: .6s }
+.btn::before { transition: all .3s ;}
+.btn:hover::before { width: 100%; transition-delay: .4s;} 
 */
 
 /* 作品サンプル */
@@ -56,13 +57,7 @@ header { width: 100vw; height: 100vh; background-image: url(../images/pc_mookup.
   position:absolute;
   bottom:7%;
   right:50%;
-  animation: arrowmove 2s ease-in-out infinite;
 }
-@keyframes arrowmove{
-      0%{bottom:7%;}
-      50%{bottom:9%;}
-     100%{bottom:7%;}
- }
 .scrolldown span{
   position: absolute;
   left:-25px;
@@ -71,28 +66,28 @@ header { width: 100vw; height: 100vh; background-image: url(../images/pc_mookup.
   font-size: 0.7rem;
   letter-spacing: 0.05em;
   -ms-writing-mode: tb-rl;
-    -webkit-writing-mode: vertical-rl;
-    writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
 }
 .scrolldown:before {
-    content: "";
-    /*描画位置*/
-    position: absolute;
-    bottom: 0;
-    right: -6px;
-    /*矢印の形状*/
-    width: 1px;
-    height: 20px;
-    background: #eee;
-    transform: skewX(-31deg);
+  content: "";
+  /*描画位置*/
+  position: absolute;
+  bottom: 0;
+  right: -6px;
+  /*矢印の形状*/
+  width: 1px;
+  height: 20px;
+  background: #eee;
+  transform: skewX(-31deg);
 }
 .scrolldown:after{
   content:"";
-    /*描画位置*/
+  /*描画位置*/
   position: absolute;
   bottom:0;
   right:0;
-    /*矢印の形状*/
+  /*矢印の形状*/
   width:1px;
   height: 50px;
   background:#eee;
@@ -112,8 +107,64 @@ header { width: 100vw; height: 100vh; background-image: url(../images/pc_mookup.
 .complete { width: 100%; margin-bottom: 12.4% 0; }
 
 /* about */
-#about .container { display: block; }
-.container { padding: 100px; }
-.site_ttl { justify-content: center; align-items: center; }
-.site_about { position: relative; display: flex; align-items: center; justify-content: center;  }
-.site_about p { line-height: 300%; text-align: left;}
+#about .container { display: block; padding-top: 100px; }
+#about .container:nth-of-type(1) h3 { text-align: left; }
+#about .container h2 { width: 52.5%; text-align: left; margin-left: auto; border-bottom: 1px solid #FFF8F8;}
+#about .container div { display: block;}
+.site_about { display: flex; width: 80%; padding: 50px 0; border-bottom: 1px solid #FFF8F8; }
+.site_about p { line-height: 300%; text-align: right; }
+
+.site_usage { display: flex; justify-content: space-between; padding-top: 270px;}
+.site_usage h3 > span { font-size: 60px; }
+.site_usage li:nth-of-type(2) { margin-top: 150px; }
+.site_usage li:nth-of-type(3) { margin-top: 300px; }
+
+
+.site_usage p { line-height: 300%; }
+.site_theme { display: block; position: relative; }
+.site_theme h1 { position: relative; text-align: center; font-size: 3.6rem; padding-bottom: 2.0rem;}
+.site_theme h3 { position: relative; margin-left: auto;}
+.site_theme p { position: relative;}
+
+footer { padding: 20px 0;}
+footer p { color: #FF5722; line-height: 60px; font-size: 16px; text-align: center;}
+
+.scrolldown2{
+  position:absolute;
+  bottom:7%;
+  right:10%;
+}
+.scrolldown2 span{
+  position: absolute;
+  left:-50px;
+  bottom:10px;
+  color: #FFF8F8;
+  font-size: 2.5rem;
+  letter-spacing: 0.05em;
+  -ms-writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+}
+.scrolldown2:before {
+  content: "";
+  /*描画位置*/
+  position: absolute;
+  bottom: 0;
+  right: -6px;
+  /*矢印の形状*/
+  width: 1px;
+  height: 20px;
+  background: #eee;
+  transform: skewX(-31deg);
+}
+.scrolldown2:after{
+  content:"";
+  /*描画位置*/
+  position: absolute;
+  bottom:0;
+  right:0;
+  /*矢印の形状*/
+  width:1px;
+  height: 200px;
+  background:#eee;
+}
