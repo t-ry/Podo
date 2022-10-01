@@ -3,20 +3,25 @@
 body { padding-top: 100px; }
 a { cursor: pointer; }
 img { width: 100%; }
+h2 { font-size: 3.6rem; }
+h3 { font-size: 2.4rem; color: #ff5722;}
+footer p { color: #FF5722; line-height: 60px; font-size: 16px; text-align: center; padding-top: 50px;}
 
 .heading { font-size: 6.4rem; font-weight: bold; text-align: start; }
 .subheading { font-size: 3.6rem; text-align: start; }
+.theme { transform: rotate(90deg); color: #FF5722; width: 10px; white-space: nowrap; height: fit-content; transform-origin:0 50%;}
+.theme_left { transform: rotate(-90deg); color: #FF5722; width: 10px; white-space: nowrap; height: fit-content; transform-origin:0 50%;}
 
-.container { display: flex; justify-content: space-between; width: 77%; margin: 50px 10%; }
+.container { display: flex; justify-content: space-between; width: 78%; margin: 50px 10%; }
 .container:nth-of-type(even) > .inner { justify-content: flex-end; }
 
 /* ヘッダー */
-header { width: 100vw; height: 100vh; background: url(../images/pc_mookup.png) center center / cover no-repeat; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+header { width: 100vw; height: 100vh; background-image: url(../images/pc_mookup.png); background-position: left 80% bottom 25%; background-size: 160%; display: flex; align-items: center; justify-content: center; overflow: hidden; }
     /* ナビゲーション */
     nav { display: flex; justify-content: space-between; padding: 20px 10%; position: fixed; top: 0; left: 0; width: 80%; background-color: rgba(38,41,41,.7); z-index: 9999; }
     nav ul { display: flex; }
     nav li { list-style: none; margin-left: 60px;}
-    nav a { color: #ff5722; font-size: 36px; font-weight: bold; text-decoration: none;}
+    nav a { color: #ff5722; font-size: 3.6rem; font-weight: bold; text-decoration: none;}
     nav .nav-loop { text-align: start; }
 
 .title { position: absolute; top: 50%; left: 62%; transform: translateY(-50%); -webkit-transform: translateY(-50%);}
@@ -26,7 +31,6 @@ header { width: 100vw; height: 100vh; background: url(../images/pc_mookup.png) c
 #Works { display: block; position: relative; }
 #Works > .heading { text-align: center; }
 .current_works { text-align: end; padding-right: 10%; color: #FF5722; }
-.theme { transform: rotate(90deg); color: #FF5722; width: 10px; white-space: nowrap; height: fit-content; transform-origin:0 50%;}
 .inner { display: flex; flex-wrap: wrap; }
 .content_box { display: block; width: 28%; padding: 40px 10px; }
 .content_box img { padding-bottom: 10px; }
@@ -96,6 +100,20 @@ header { width: 100vw; height: 100vh; background: url(../images/pc_mookup.png) c
 
 /* making */
 #making { position: relative; } 
-#making .container { display: flex;  justify-content: center; }
-#making .inner { width: 80%; display: flex; flex-direction: column; align-items: center; }
+#making .container { display: flex; justify-content: center; align-items: center; }
+#making .inner{ width: 78%; display: flex; flex-direction: column; align-items: center; }
 #making video { width: 100%; }
+
+.making_steps { width: 80%; display: flex; flex-direction: column; }
+.making_ttl { color: #FF5722; margin: 20px auto; }
+/* .making_steps video:not(:first-of-type) { margin-top: 30px;} */
+
+.divider { width: 100%; margin: 12.4% 0; }
+.complete { width: 100%; margin-bottom: 12.4% 0; }
+
+/* about */
+#about .container { display: block; }
+.container { padding: 100px; }
+.site_ttl { justify-content: center; align-items: center; }
+.site_about { position: relative; display: flex; align-items: center; justify-content: center;  }
+.site_about p { line-height: 300%; text-align: left;}
