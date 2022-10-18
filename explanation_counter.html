@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podo - PowerPointでかっこいいアニメーションを</title>
+
+    <!-- fontImport -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- js -->
+        <!-- jqueryImport -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+<body>
+    <nav>
+        <p class="nav-loop font_en"><a href="index.html">Podo</a></p>
+        <ul>
+            <li class="font_en"><a href="about.html">About</a></li>
+            <li class="font_en"><a href="index.html#Works">Works</a></li>
+        </ul>
+    </nav>
+    <section id="sample">
+        <div class="container">
+            <div class="sample">
+                <h3 class="theme font_en">Sample</h3>
+                <div class="wrapper">
+                    <img class="mask"  src="images/gif/counter.gif" alt="">
+                </div>
+            </div>
+            <div class="caption">
+                <h3 class="subheading">
+                    
+                </h3>
+                <p>
+
+                </p>
+            </div>
+        </div>
+        <div class="scrolldown"><span>Scroll</span></div>
+    </section>
+    <section id="making">
+        <div class="container">
+            <div class="inner">
+                <div class="making_steps">
+                    <video src="videos/counter/Counter_Trim.mp4" controls playsinline muted preload="auto" alt=""></video>
+                    <div>
+                        <h3 class="making_ttl font_en">Step1</h3>
+                        <p class="making_caption">
+                            「挿入」→「図形」からテキストボックスを選択し、1文字ずつ改行して0～9までを入れます。<br>
+                            これを必要な数字の数だけコピペして増やします。今回は4桁の数値を扱うため、0～9が4回連続したテキストボックスになっています。<br>
+                        </p>
+                    </div>
+                </div>
+                <img class="divider" src="images/divider.png" alt="">
+                <div class="making_steps">
+                    <video src="videos/counter/Counter_Trim (2).mp4" controls playsinline muted preload="auto" alt=""></video>
+                    <div>
+                        <h3 class="making_ttl font_en">Step2</h3>
+                        <p class="making_caption">
+                            先ほど挿入したテキストボックスを選択し、ctrl+xで切り取ります。</br>
+                            左上の貼り付けオプションから図として貼り付けをクリックし、表示したい数字の大きさが好きな大きさになるように調節します。<br>
+                            その後、テキストボックスを右クリック→トリミングを選択し、0の大きさに合うようにトリミングを行います。
+                        </p>
+                    </div>
+                </div>
+                <img class="divider" src="images/divider.png" alt="">
+                <div class="making_steps">
+                    <video src="videos/counter/Counter_Trim (3).mp4" controls playsinline muted preload="auto" alt=""></video>
+                    <div>
+                        <h3 class="making_ttl font_en">Step3</h3>
+                        <p class="making_caption">
+                            先ほどトリミングしたテキストボックスをコピペして、必要な桁数分並べます。</br>
+                            その後、左側のスライド一覧から現在のスライドを選択し、コピペします。
+                        </p>
+                    </div>
+                </div>
+                <img class="divider" src="images/divider.png" alt="">
+                <div class="making_steps">
+                    <video src="videos/counter/Counter_Trim (4).mp4" controls playsinline muted preload="auto" alt=""></video>
+                    <div>
+                        <h3 class="making_ttl font_en">Step4</h3>
+                        <p class="making_caption">
+                            二枚目のスライドを編集します。<br>
+                            数字を選択し、右クリック→「トリミング」から、シフトキーを押しながら好きな数字を選び、トリミングの枠がそこに合うようにずらします。この時、最上位桁から2桁目なら2段目の0～9,3桁目なら3段目の0～9と、対応する数字に合わせてください。
+                            その後、「画面切り替え」タブから「変形」を選択します。
+                        </p>
+                    </div>
+                </div>
+                <img class="divider" src="images/divider.png" alt="">
+                <div class="complete">
+                    <h3 class="complete font_en">Complete!</h3>
+                    <img src="images/gif/counter.gif" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy;2022 takahashi ryoma / <a href="https://twitter.com/kamesan_lit" class="access">twitter</a></p>
+    </footer>
+</body>
+</html>
