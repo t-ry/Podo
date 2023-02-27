@@ -1,5 +1,6 @@
 
 /* 共通要素 */
+html { overflow-x: hidden;}
 body { padding-top: 60px;}
 a { cursor: pointer; }
 p { font-size: 16px;}
@@ -11,8 +12,8 @@ video::-webkit-media-controls-volume-slider { display:none; }
   
 video::-webkit-media-controls-mute-button { display:none; }
 
-.heading { font-size: 6.4rem; font-weight: bold; text-align: start; }
-.subheading { font-size: 3.6rem; text-align: start; }
+.heading { font-size: min(12rem, 64px); font-weight: bold; text-align: start; }
+.subheading { font-size: min(7rem, 32px); text-align: start; }
 .theme { transform: rotate(90deg); color: #FF5722; width: 10px; white-space: nowrap; height: fit-content; transform-origin:0 50%;}
 .theme_left { transform: rotate(-90deg); color: #FF5722; width: 10px; white-space: nowrap; height: fit-content; transform-origin:0 50%;}
 
@@ -28,13 +29,17 @@ video::-webkit-media-controls-mute-button { display:none; }
 nav { display: flex; justify-content: space-between; padding: 10px 10%; position: fixed; top: 0; left: 0; width: 80%; background-color: rgba(38,41,41,.7); z-index: 9999; }
 nav ul { display: flex; }
 nav li { list-style: none; margin-left: 60px;}
-nav a { color: #ff5722; font-size: 3.6rem; font-weight: bold; text-decoration: none;}
+nav a { color: #ff5722; font-size: min(7rem,32px); font-weight: bold; text-decoration: none;}
 nav .nav-loop { text-align: start; }
 
 .title { position: absolute; top: 50%; left: 62%; transform: translateY(-50%); -webkit-transform: translateY(-50%);}
-.title > p { margin-top: 11%; margin-bottom: 9%; font-size: 1.6rem; line-height: 300%;}
+.title > p { margin-top: 11%; margin-bottom: 9%; font-size: 16px; line-height: 200%;}
 
-@media screen and ( max-width: 400px ) {
+@media screen and ( max-width: 1150px ) {
+  .title { left: 50%; }
+}
+
+@media screen and ( max-width: 840px ) {
   .mainvidual { background-position: left 65% bottom 30%; background-size: 2500px; }
   .title { left: 30%; }
 }
