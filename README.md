@@ -15,7 +15,7 @@ Podo
 # Url
 
 https://main--podo-animation.netlify.app/
-(なんかDNSうまくいってないので修正中です)
+(DNSうまくいってないので修正中です)
 
 # Note
 
