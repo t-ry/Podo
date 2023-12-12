@@ -20,5 +20,4 @@ https://main--podo-animation.netlify.app/
 
 # Author
 
-* t-ry
-* Meijo Univ.
+* t-ry Meijo Univ.
